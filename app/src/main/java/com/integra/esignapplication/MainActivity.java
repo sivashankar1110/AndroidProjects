@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 int REQUEST_CODE=100;
                 Intent appStartIntent = new Intent(MainActivity.this, NsdlEsignActivity.class);
                 //MainActivity should be the ASP Activity
-                appStartIntent.putExtra("msg", "msg"); // msg contains esign request xml from ASP.
+                appStartIntent.putExtra("msg", ""); // msg contains esign request xml from ASP.
                 appStartIntent.putExtra("env", "PREPROD"); //Possible values PREPROD or PROD
                 appStartIntent.putExtra("returnUrl", ""); // your package name where esign
 //                startActivityForResult(appStartIntent, REQUEST_CODE);
